@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
 {
-
-    //Variables will go first
     [SerializeField] private int health = 100;
     [SerializeField] private int attack = 10;
     [SerializeField] private int level = 1;
 
-    //Methods will go underneath here
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space));
+        {
+            Debug.Log("Player has hit spacebar");
+            level++;
+        }
 
+        if (level == 5) ;
+    }
 }
